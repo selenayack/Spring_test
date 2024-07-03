@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/database_test
+    username: postgres
+    password: 123456
+    hikari:
+      testWhileIdle: true
+      test-on-borrow: true
+      leakDetectionThreshold: 20000
+
+  mail:
+    host: smtp.yerlem.com
+    port: 587
+    username: ye.karanfil@yerlem.com
+    password: Ts4ZLEg5
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+logging:
+  level:
+    org.springframework.mail: DEBUG
+
+
+
+
+
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/database_test
+
+
+
+  username: postgres
+  password: 123456
